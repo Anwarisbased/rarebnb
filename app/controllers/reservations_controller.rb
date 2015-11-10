@@ -17,7 +17,11 @@ class ReservationsController < ApplicationController
 			conflict: is_conflict(start_date, end_date)
 		}
 
-		render json: output		
+		render json: output
+	end
+
+	def your_trips
+		@trips = current_user.reservations
 	end
 
 	def create
