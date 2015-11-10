@@ -28,7 +28,7 @@ class RoomsController < ApplicationController
       @photos = @room.photos
       redirect_to edit_room_path(@room), notice: "Saved..."
     else
-      render :new
+      redirect_to new_room_path, notice: "Please provide all information for this room."
     end
   end
 
