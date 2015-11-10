@@ -14,4 +14,7 @@ resources :photos
 resources :rooms do
   resources :reservations, only: [:create]
 end
+
+  get '/preload' => 'reservations#preload'
+
 end
