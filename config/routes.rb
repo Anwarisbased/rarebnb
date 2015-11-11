@@ -15,7 +15,7 @@ resources :rooms do
   resources :reservations, only: [:create]
 end
 
-resources : conversations, only: [:index, :create] do
+resources :conversations, only: [:index, :create] do
   resources :messages, only: [:index, :create]
 end
 
