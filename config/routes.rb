@@ -20,7 +20,7 @@ resources :conversations, only: [:index, :create] do
 end
 
 resources :rooms do
-  resources :reviews, only [:create, :destroy]
+  resources :reviews, only: [:create, :destroy]
 end
 
   get '/preload' => 'reservations#preload'
