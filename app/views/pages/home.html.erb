@@ -25,16 +25,19 @@
 
 <div class="row">
 	<div class="col-md-4 col-sm-12">
+		<a href="http://localhost:3000/search?utf8=%E2%9C%93&search=new+york">
 		<div class="discovery-card" style="background-image: url('/assets/New_York.jpeg')">
 			<div class="va-container">
 				<div class="va-middle text-center">
 					<h2><strong>New York</strong></h2>
 				</div>
 			</div>
+			</a>
 
 		</div>
 	</div>
 	<div class="col-md-4 col-sm-6">
+		<a href="http://localhost:3000/search?utf8=%E2%9C%93&search=london">
 		<div class="discovery-card" style="background-image: url('/assets/London.jpeg')">
 			<div class="va-container">
 				<div class="va-middle text-center">
@@ -43,7 +46,9 @@
 			</div>
 		</div>
 	</div>
+</a>
 	<div class="col-md-4 col-sm-6">
+		<a href="http://localhost:3000/search?utf8=%E2%9C%93&search=berlin">
 		<div class="discovery-card" style="background-image: url('/assets/Berlin.jpeg')">
 			<div class="va-container">
 				<div class="va-middle text-center">
@@ -52,6 +57,7 @@
 			</div>
 		</div>
 	</div>
+</a>
 </div>
 <br>
 
@@ -70,6 +76,7 @@
 					<%= image_tag room.photos[0].image.url(:medium) if room.photos.length > 0 %>
 				</div>
 				<div class="panel-body">
+					<%= image_tag avatar_url(room.user), class: "img-circle avatar-small" %>&nbsp;
 					<%= link_to room.listing_name, room %>
 				</div>
 			</div>
