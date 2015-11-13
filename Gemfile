@@ -18,6 +18,7 @@ gem 'geocoder'
 gem 'jquery-ui-rails'
 gem 'private_pub'
 gem 'thin'
+gem 'ransack'
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
 gem 'byebug'
